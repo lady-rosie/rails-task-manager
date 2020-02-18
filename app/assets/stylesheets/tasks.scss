@@ -3,17 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 li{
   list-style: none;
-  display: flex;
-  align-items: center;
 }
-.checkbox{
-  border: 1px solid black;
-  width: 15px;
-  height: 15px;
-  border-radius: 4px;
-  margin: 3px;
-}
-
-#true{
-background-color: green;
+.far{
+  margin: 4px;
 }

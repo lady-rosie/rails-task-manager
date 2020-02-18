@@ -3,7 +3,11 @@
 <div class="tasks">
   <ul>
     <% @tasks.each do |task| %>
-    <li> <div class="checkbox" id='<%= task.completed%>'></div> <%= task.title%></li>
+      <% if task.completed == true %>
+      <li><i class="far fa-check-square"></i> <%= task.title%></li>
+      <% else %>
+      <li><i class="far fa-square"></i> <%= task.title%></li>
+      <% end%>
     <% end %>
   </ul>
 </div
