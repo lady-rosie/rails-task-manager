@@ -1,9 +1,19 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 li{
   list-style: none;
 }
 .far{
   margin: 4px;
+}
+
+.task-form{
+  width: 400px;
+}
+
+.container{
+max-width: 600px;
+margin: 50px 30px;
 }
