@@ -4,14 +4,25 @@
 
 li{
   list-style: none;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+li a{
+  color:#377BB5;
 }
 .container{
 max-width: 600px;
 margin: 50px 30px;
+color:#232d3a;
 }
 
 .far{
   margin: 4px;
+}
+.tasks{
+  border-bottom: 1px solid lightgray;
+  margin: 32px 0px 24px 0px;
 }
 
 .task-form{
@@ -19,8 +30,59 @@ margin: 50px 30px;
 }
 
 .task-header{
-  width: 100%;
+  width: 60%;
 }
 #task_completed{
   margin: 10px
+}
+
+.button a {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  color:#377BB5;
+}
+.button{
+  margin: 16px 0px;
+}
+
+.fa-trash-alt{
+  color: grey;
+}
+.fas{
+  margin: 4px;
+}
+
+.check{
+  display: flex;
+  align-items: baseline;
+}
+
+.description{
+  border-radius: 4px;
+  background: #CED0CE;
+  padding: 24px;
+  margin: 24px;
+  max-width: 50%;
+}
+.button-edit a {
+  display: flex;
+  border: 1px solid #CED0CE;
+  border-radius: 4px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#232d3a;
+  text-decoration: none;
+}
+
+.button-edit a:hover{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  border: 2px solid #CED0CE;
+}
+.button-edit p {
+  margin: 0;
 }

@@ -1,7 +1,12 @@
 <div class="container">
   <div class="d-inline-flex justify-content-between task-header">
   <h1><%= @task['title'] %></h1>
-  <%= link_to 'Edit task', edit_task_path %>
+  <div class="button-edit">
+     <%= link_to edit_task_path do %>
+       <i class="far fa-edit"></i>
+       <%= content_tag :p, "Edit task"%>
+     <% end %>
+   </div>
   </div>
 
   <div class="description">
@@ -15,9 +20,11 @@
       <p><i class="far fa-square"></i> This task as not been completed yet</p>
     <% end%>
   </div>
-  <div class="back-to-list">
-    <%= link_to 'Back to list', tasks_path %>
+  <div class="button">
+    <%= link_to tasks_path do %>
+      <i class="fas fa-undo-alt"></i>
+      <%= content_tag :p, "Back to list"%>
+    <% end %>
   </div>
-
 </div>
 
