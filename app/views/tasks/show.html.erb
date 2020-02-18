@@ -1,0 +1,15 @@
+<h1><%= @task['title'] %></h1>
+
+<div class="description">
+  <%= @task['details'] %>
+</div>
+
+<div class="completed">
+  <% if @task['completed'] == true %>
+    <p><i class="far fa-check-square"></i> This task is completed</p>
+  <% else %>
+    <p><i class="far fa-square"></i> This task as not been completed yet</p>
+  <% end%>
+</div>
+
+<%= link_to 'Back to list', tasks_path %>
