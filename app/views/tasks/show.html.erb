@@ -1,5 +1,8 @@
 <div class="container">
+  <div class="d-inline-flex justify-content-between task-header">
   <h1><%= @task['title'] %></h1>
+  <%= link_to 'Edit task', edit_task_path %>
+  </div>
 
   <div class="description">
     <%= @task['details'] %>
@@ -17,3 +20,4 @@
   </div>
 
 </div>
+

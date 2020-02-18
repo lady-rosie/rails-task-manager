@@ -5,6 +5,11 @@
 li{
   list-style: none;
 }
+.container{
+max-width: 600px;
+margin: 50px 30px;
+}
+
 .far{
   margin: 4px;
 }
@@ -13,7 +18,9 @@ li{
   width: 400px;
 }
 
-.container{
-max-width: 600px;
-margin: 50px 30px;
+.task-header{
+  width: 100%;
+}
+#task_completed{
+  margin: 10px
 }
